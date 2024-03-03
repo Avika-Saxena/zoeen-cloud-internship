@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../stylesheets/profilestyle.css">
+    <link rel="stylesheet" href="../stylesheets/editprofile.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                shopNow
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="https://codepen.io/jo_Geek/" target="_blank">Dashboard</a>
+            <a href="//github.io/jo_geek" target="_blank">Notification</a>
+            <a href="http://stackoverflow.com/users/4084003/" target="_blank">Add to cart</a>
+            <form class="logout-form" action="/logout" method="post">
+                <button>Logout</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <div class="sidebar-descrip">
+                <h1>Theadyn's Account</h1>
+                <hr>
+            </div>
+            <div class="options">
+                <form action="/delete" method="post">
+                    <button type="submit" class="profile">My Profile</button>
+                    <button type="submit" class="changepass">Change Password</button>
+                    <button type="submit" class="purchases">My purchases</button>
+                    <button type="submit" class="delete">Delete my account</button>
+                </form>
+            </div>
+        </div>
+        <div class="white-container">
+            <div class="description">
+                <h1>Edit Profile</h1>
+                <div class="right-descrip">
+                    <h2>Manage and protect your account</h2>
+                </div>
+            </div>
+            <hr>
+            <div class="info-container">
+                <form action="/update" method="POST">
+                    <div class="left-info">
+                        <section>
+                            <div class="question">
+                                <label for="username">Username : </label>
+                            </div>
+                            <div class="answer">
+                                <input type="text" name="newusername" value="<%=username %>">
+                            </div>
+                        </section>
+                        <section>
+                            <div class="question ">
+                                <label for="Email ">Email : </label>
+                            </div>
+                            <div class="answer ">
+                                <input type="text " name="newemail " value="<%=email %>">
+                            </div>
+                        </section>
+                        <section>
+                            <div class="question ">
+                                <label for="Phone Number ">Phone Number : </label>
+                            </div>
+                            <div class="answer ">
+                                <input type="text " name="username " placeholder="Username ">
+                            </div>
+                        </section>
+                    </div>
+                    <div class="verticle "></div>
+                    <div class="right-info ">
+                        <section>
+                            <div class="question "></div>
+                            <div class="answer ">
+                                <input type="text " name="username " placeholder="Username ">
+                            </div>
+                        </section>
+                        <section>
+                            <div class="question "></div>
+                            <div class="answer ">
+                                <input type="text " name="username " placeholder="Username ">
+                            </div>
+                        </section>
+                        <section>
+                            <div class="question "></div>
+                            <div class="answer ">
+                                <input type="text " name="username " placeholder="Username ">
+                            </div>
+                        </section>
+                    </div>
+                    <button type="submit " class="confirm "> C <br>O <br>N <br>F<br>I <br>R <br>M
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer ">
+            <div class="contacts ">
+                <p><strong>Contacts : </strong>
+                    <a>(049) 543-0333</a>,
+                    <a>hiraeth@gmail.com</a>,
+                    <a>0943-678-910 </a></p>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
